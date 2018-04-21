@@ -8,10 +8,15 @@
 
 import Foundation
 
+let rodada: Int = 1
+
 func main() {
     print("Make this!")
     let decoder = Decoder()
     decoder.market()
+    
+//    let csv = CSV(name: "Test", content: "eu;tu\n")
+//    csv.save()
 }
 
 main()

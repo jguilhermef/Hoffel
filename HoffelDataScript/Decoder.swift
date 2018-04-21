@@ -8,17 +8,16 @@
 
 import Foundation
 
-
 class Decoder {
     let api: APIClient = API()
     
-    func market() {
+    func market(result: @escaping ([Atleta]) -> ()) {
         api.request { (result) in
             switch result {
             case .success(let data):
                 do{
-                    let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-                    print(json)
+                    let atletas = try JSONDecoder().decode(Atletas.self, from: data)
+                    result(atletas.atletas)
                 } catch {
                     print("Error on decoding: \(error)")
                 }

@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B880EEE208B71D200EE6543 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B880EED208B71D200EE6543 /* Models.swift */; };
 		1BE8189E208B60E0007D6125 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE8189D208B60E0007D6125 /* main.swift */; };
 		1BE818A5208B6158007D6125 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE818A4208B6158007D6125 /* API.swift */; };
 		1BE818A7208B61C7007D6125 /* Decoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE818A6208B61C7007D6125 /* Decoder.swift */; };
+		1BE818A9208B6DBC007D6125 /* CSV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BE818A8208B6DBC007D6125 /* CSV.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,10 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1B880EED208B71D200EE6543 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		1BE8189A208B60E0007D6125 /* HoffelDataScript */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = HoffelDataScript; sourceTree = BUILT_PRODUCTS_DIR; };
 		1BE8189D208B60E0007D6125 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		1BE818A4208B6158007D6125 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		1BE818A6208B61C7007D6125 /* Decoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Decoder.swift; sourceTree = "<group>"; };
+		1BE818A8208B6DBC007D6125 /* CSV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CSV.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +68,8 @@
 				1BE8189D208B60E0007D6125 /* main.swift */,
 				1BE818A4208B6158007D6125 /* API.swift */,
 				1BE818A6208B61C7007D6125 /* Decoder.swift */,
+				1BE818A8208B6DBC007D6125 /* CSV.swift */,
+				1B880EED208B71D200EE6543 /* Models.swift */,
 			);
 			path = HoffelDataScript;
 			sourceTree = "<group>";
@@ -126,9 +132,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1BE818A9208B6DBC007D6125 /* CSV.swift in Sources */,
 				1BE818A5208B6158007D6125 /* API.swift in Sources */,
 				1BE818A7208B61C7007D6125 /* Decoder.swift in Sources */,
 				1BE8189E208B60E0007D6125 /* main.swift in Sources */,
+				1B880EEE208B71D200EE6543 /* Models.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
