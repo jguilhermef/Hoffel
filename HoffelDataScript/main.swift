@@ -8,15 +8,20 @@
 
 import Foundation
 
-let rodada: Int = 1
+let rodada: Int = -1
+
 
 func main() {
     print("Make this!")
     let decoder = Decoder()
     decoder.market { (atletas) in
-        let content = CSVParser().parse(atletlas: atletas)
-        let csv = CSV(name: "Rodada\(rodada)", content: content)
-        csv.save()
+       
+        let parser = CSVParser()
+        let atletasCSV = CSV(name: "Rodada\(rodada)", content: parser.parse(atletlas: atletas))
+        let scoutsCSV = CSV(name: "Rodada\(rodada)Scouts", content: parser.parseScouts(atletas: atletas))
+        
+        atletasCSV.save()
+        scoutsCSV.save()
         print("Done")
     }
 }
