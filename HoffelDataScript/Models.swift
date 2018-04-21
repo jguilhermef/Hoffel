@@ -12,7 +12,7 @@ struct Atleta: Codable {
     var nome: String
     var slug: String
     var apelido: String
-    var foto: URL?
+    var foto: String?
     var atleta_id: Int
     var rodada_id: Int
     var clube_id: Int

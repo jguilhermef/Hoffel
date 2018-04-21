@@ -11,13 +11,13 @@ import Foundation
 class Decoder {
     let api: APIClient = API()
     
-    func market(result: @escaping ([Atleta]) -> ()) {
+    func market(values: @escaping ([Atleta]) -> ()) {
         api.request { (result) in
             switch result {
             case .success(let data):
                 do{
                     let atletas = try JSONDecoder().decode(Atletas.self, from: data)
-                    result(atletas.atletas)
+                    values(atletas.atletas)
                 } catch {
                     print("Error on decoding: \(error)")
                 }

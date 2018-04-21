@@ -13,10 +13,12 @@ let rodada: Int = 1
 func main() {
     print("Make this!")
     let decoder = Decoder()
-    decoder.market()
-    
-//    let csv = CSV(name: "Test", content: "eu;tu\n")
-//    csv.save()
+    decoder.market { (atletas) in
+        let content = CSVParser().parse(atletlas: atletas)
+        let csv = CSV(name: "Rodada\(rodada)", content: content)
+        csv.save()
+        print("Done")
+    }
 }
 
 main()
