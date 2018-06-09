@@ -8,8 +8,8 @@
 
 import Foundation
 
-//Ultima rodada: 7
-let rodada: Int = 8
+//Ultima rodada: 10
+let rodada: Int = -1
 
 func main() {
     print("Make this!")
